@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Study MBBS Abroad - Explore top countries and apply now!">
+    <title>Study MBBS Abroad</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+    <script>
+        fbq('init', 'FB_PIXEL_ID'); 
+        fbq('track', 'PageView');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Arial', sans-serif; }
+        .shadow-lg { box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
+        .hover-effect:hover { transform: scale(1.05); transition: 0.3s ease-in-out; }
+        .bg-blue-gradient { background: linear-gradient(90deg, #1e3a8a, #3b82f6); }
+        .btn-hover:hover { background-color: #2563eb; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    
+    <section class="text-center bg-blue-gradient text-white py-20">
+        <h1 class="text-5xl font-bold">Start Your MBBS Journey Abroad Today!</h1>
+        <p class="mt-4 text-lg">Affordable education in top medical universities worldwide.</p>
+        <button class="mt-6 px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover-effect">Apply Now</button>
+    </section>
+
+    <section class="p-10 bg-white">
+        <h2 class="text-4xl font-bold text-center mb-6">Why Study MBBS Abroad?</h2>
+        <div class="grid md:grid-cols-3 gap-6 text-center">
+            <div class="p-6 shadow-lg rounded-lg bg-gray-50 hover-effect">Affordable Tuition Fees</div>
+            <div class="p-6 shadow-lg rounded-lg bg-gray-50 hover-effect">Globally Recognized Degrees</div>
+            <div class="p-6 shadow-lg rounded-lg bg-gray-50 hover-effect">High-Quality Education</div>
+        </div>
+    </section>
+
+    <section class="p-10 bg-gray-100">
+        <h2 class="text-4xl font-bold text-center mb-6">Top Countries</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="p-6 bg-white shadow-lg text-center rounded-lg hover-effect">Russia</div>
+            <div class="p-6 bg-white shadow-lg text-center rounded-lg hover-effect">Uzbekistan</div>
+            <div class="p-6 bg-white shadow-lg text-center rounded-lg hover-effect">Kazakhstan</div>
+            <div class="p-6 bg-white shadow-lg text-center rounded-lg hover-effect">Philippines</div>
+            <div class="p-6 bg-white shadow-lg text-center rounded-lg hover-effect">Georgia</div>
+            <div class="p-6 bg-white shadow-lg text-center rounded-lg hover-effect">Kyrgyzstan</div>
+            <div class="p-6 bg-white shadow-lg text-center rounded-lg hover-effect">Egypt</div>
+        </div>
+    </section>
+
+    <section class="p-10 bg-white">
+        <h2 class="text-4xl font-bold text-center mb-6">Admission Process & Eligibility</h2>
+        <ol class="list-decimal list-inside space-y-4 text-lg">
+            <li>Check eligibility criteria.</li>
+            <li>Submit application form.</li>
+            <li>Receive admission letter.</li>
+            <li>Apply for a student visa.</li>
+            <li>Fly to your chosen country and begin studies.</li>
+        </ol>
+    </section>
+
+    <section class="p-10 bg-gray-100">
+        <h2 class="text-4xl font-bold text-center mb-6">Apply Now</h2>
+        <form id="leadForm" class="max-w-lg mx-auto bg-white p-6 shadow-lg rounded-lg">
+            <input type="text" id="name" class="w-full p-4 border rounded-lg mb-4" placeholder="Your Name" required>
+            <input type="email" id="email" class="w-full p-4 border rounded-lg mb-4" placeholder="Your Email" required>
+            <input type="tel" id="phone" class="w-full p-4 border rounded-lg mb-4" placeholder="Your Phone" required>
+            <select id="country" class="w-full p-4 border rounded-lg mb-4">
+                <option value="">Select Preferred Country</option>
+                <option>Russia</option>
+                <option>Uzbekistan</option>
+                <option>Kazakhstan</option>
+                <option>Philippines</option>
+                <option>Georgia</option>
+                <option>Kyrgyzstan</option>
+                <option>Egypt</option>
+            </select>
+            <button type="submit" class="w-full bg-blue-600 text-white p-4 rounded-lg btn-hover">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted successfully!');
+        });
+    </script>
+</body>
+</html>
